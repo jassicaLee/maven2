@@ -24,6 +24,7 @@ In the *org.cloudfoundry.samples* package under *src/main/java*, you will see *H
 			response.setContentType("text/plain");
 			response.setStatus(200);
 			response.setStatus(201);
+			response.setStatus(202);
 			PrintWriter writer = response.getWriter();
 			writer.println("Hello from " + System.getenv("VCAP_APP_HOST") + ":" + System.getenv("VCAP_APP_PORT"));
 			writer.close();
